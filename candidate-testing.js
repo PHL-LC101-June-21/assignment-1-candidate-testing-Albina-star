@@ -35,7 +35,7 @@ function askQuestion(i) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 function gradeQuiz(candidateAnswers) {
   for (let i=0; i < questions.length; i = i + 1) { 
-    if (candidateAnswers[i] == correctAnswers[i]){
+    if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
       answerGrade = answerGrade + 1;
     }
     totalGrade= (((answerGrade) / 5) * 100);
